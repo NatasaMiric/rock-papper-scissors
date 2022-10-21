@@ -8,9 +8,10 @@
 body {
     background-color: #3f4344;
     font-family: 'Luckiest Guy', sans-serif;
-    letter-spacing: 2px;
-    color: #82ed9f;
+    letter-spacing: 3px;
+    color: #8BFEAA;
     text-align: center;
+   
 }
 
 header {
@@ -19,10 +20,16 @@ header {
 
 header > h1 {
     font-size: 200%;
+    
+}
+
+h1,
+h2 {
+    text-shadow: 2px 2px rgb(230, 73, 230) ;
 }
 
 .rules {
-    padding: 2rem;  
+    margin: 0 1rem;
     line-height: 3rem;   
 }
 
@@ -50,11 +57,11 @@ header > h1 {
 }
 
 .btn--purple {
-    background-color: #c3b1e1;
+    background-color: #8f61d8;
 }
 
 .btn--pink {
-    background-color: #f8c8dc;
+    background-color: #e7699e;
 }
 
 .btn:hover {
