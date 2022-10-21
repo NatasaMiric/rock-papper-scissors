@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Rock Papper Scissors Game</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rock Papper Scissors Game</h1>
+    </header>
+
+    <section>
+        <h2>Rules</h2>
+        <p>⟪ Rock wins against scissors ⟫ Scissors win against paper ⟫ Paper wins against rock ⟪</p>
+    </section>
+    <div class="play-area">
+        <div>
+            <h2>Make your move!</h2>
+        </div>
+        <div class="choices">
+            <button class="btn" id="rock">Rock</button>
+            <button class="btn" id="papper">Papper</button>
+            <button class="btn" id="scissors">Scissors</button>
+        </div>
+    </div>
+    <div class="result-display">
+        <div id="result">You Win!</div>
+        <div>Player: <span id="player-choice"></span></div>
+        <div>Computer: <span id="computer-choice"></span></div>
+    </div>
+    <div>
+        <h2>Score</h2>
+        <span id="player-score">0</span> : <span id="comp-score">0</span>
+    </div>
+
+    <script src="assets/js/game.js"></script>
+</body>
+
+</html>
