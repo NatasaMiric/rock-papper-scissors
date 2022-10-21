@@ -39,7 +39,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;     
 }
 /* Styling of buttons */
 .choices {
@@ -53,6 +53,8 @@ h2 {
     transition: all 0.3s ease;
     border-radius: 50%;
     font-size: 50px;
+    outline: none;
+    border: none;
 }
 
 .btn--blue {
