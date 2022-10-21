@@ -15,7 +15,7 @@
         <h1>Rock Papper Scissors Game</h1>
     </header>
 
-    <section>
+    <section class="rules">
         <h2>Rules</h2>
         <p>⟪ Rock wins against scissors ⟫ Scissors win against paper ⟫ Paper wins against rock ⟪</p>
     </section>
@@ -24,9 +24,9 @@
             <h2>Make your move!</h2>
         </div>
         <div class="choices">
-            <button class="btn" id="rock">Rock</button>
-            <button class="btn" id="papper">Papper</button>
-            <button class="btn" id="scissors">Scissors</button>
+            <button class="btn btn--yellow" id="rock">Rock</button>
+            <button class="btn btn--purple" id="papper">Papper</button>
+            <button class="btn btn--pink" id="scissors">Scissors</button>
         </div>
     </div>
     <div class="result-display">
@@ -34,7 +34,7 @@
         <div>Player: <span id="player-choice"></span></div>
         <div>Computer: <span id="computer-choice"></span></div>
     </div>
-    <div>
+    <div class="score">
         <h2>Score</h2>
         <span id="player-score">0</span> : <span id="comp-score">0</span>
     </div>

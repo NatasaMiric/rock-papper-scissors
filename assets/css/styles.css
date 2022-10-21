@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #3f4344;
+    font-family: 'Luckiest Guy', sans-serif;
+    letter-spacing: 2px;
+    color: #82ed9f;
+    text-align: center;
+}
+
+header {
+    padding: 2rem;
+}
+
+header > h1 {
+    font-size: 200%;
+}
+
+.rules {
+    padding: 2rem;  
+    line-height: 3rem;   
+}
+
+.play-area {    
+    display: flex;
+    flex-direction: column;   
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    flex-wrap: wrap;   
+}
+
+.btn {
+    margin: 1rem;    
+    width: 200px;
+    height: 100px;    
+    transition: all 0.3s ease;
+}
+
+.btn--yellow {
+    background-color: #fdfd96;
+}
+
+.btn--purple {
+    background-color: #c3b1e1;
+}
+
+.btn--pink {
+    background-color: #f8c8dc;
+}
+
+.btn:hover {
+    border: 3px solid #82ed9f ;
+    cursor: pointer;
+}
+
+.result-display {
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.score {
+    line-height: 2.5rem;
+}
+
+.score > span {
+    font-size: 30px;    
+}
