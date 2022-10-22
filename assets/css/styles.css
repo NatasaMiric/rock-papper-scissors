@@ -14,7 +14,7 @@ body {
     color: #8BFEAA;
     text-align: center;
 }
-/* Header style */
+/* Style for the title */
 header {
     padding: 2rem;
 }
@@ -32,7 +32,9 @@ h2 {
     margin: 0 1rem;
     line-height: 3rem;
 }
-/* Add flexbox on play area to achieve flexible responsive layout structure */
+/* Add flex on play area so that the buttons stand on the same line
+and to achieve responsive layout structure 
+ */
 .play-area {
     display: flex;
     flex-direction: column;
