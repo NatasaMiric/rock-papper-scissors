@@ -93,6 +93,7 @@ and to achieve responsive layout structure
 /* Score area */
 .score {
     line-height: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .score>span {
