@@ -54,7 +54,7 @@ function generateComputerInput() {
 
 }
 /* Compare the user and computers input and inform user if he wins or loses.
- Assign the inner.HTML result message in order to be displayed on user's screen.
+ Assign the inner.HTML property to result message in order to be displayed on user's screen.
  */
 function checkWinner() {
 

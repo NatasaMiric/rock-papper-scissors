@@ -80,11 +80,14 @@ and to achieve responsive layout structure
     padding: 1rem;
     line-height: 3rem;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 1rem;
 }
 #result-text {
-    font-size: 30px;
-        
+    font-size: 30px;           
 }
 
 /* Score area */
