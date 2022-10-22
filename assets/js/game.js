@@ -17,7 +17,7 @@ let result;
 
 /* Select all three buttons and add event listeners so that everytime 
 when player clicks on the button the id gets targeted and then it gets displayed 
-in  player's choice field
+in  player's choice field with the use of inner.HTML property.
 Add the function that generates computer's choice and 
 the function that checks who is the winner. 
 */
@@ -31,8 +31,8 @@ btnChoices.forEach(button => button.addEventListener('click', () => {
 
 /* Math.random will give us a random number between 1 and 3 and Math.floor an integer.
 Set value for each number.If computer randomly picks 1 his value is rock, if it picks 2,
- it is papper and 3 scissors. Assign the value to compChoice and add innerHTML
- to be displayed in the play area. 
+it is papper and 3 scissors. Assign the value to compChoice and add innerHTML
+to be displayed on user's screen. 
 */
 function generateComputerInput() {
 
@@ -54,7 +54,7 @@ function generateComputerInput() {
 
 }
 /* Compare the user and computers input and inform user if he wins or loses.
- Assign the inner.HTML result message in order to be displayed on play area
+ Assign the inner.HTML result message in order to be displayed on user's screen.
  */
 function checkWinner() {
 
@@ -75,7 +75,7 @@ function checkWinner() {
     }
     if (userChoice === "papper" && compChoice === "rock") {
 
-        result = "You Win!";        
+        result = "You Win!";
     }
     if (userChoice === "scissors" && compChoice === "rock") {
 
@@ -86,6 +86,6 @@ function checkWinner() {
         result = "You Win!";
     }
 
-    resultMessage.innerHTML= result;
+    resultMessage.innerHTML = result;
 
 }
