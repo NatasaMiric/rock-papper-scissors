@@ -78,8 +78,15 @@ and to achieve responsive layout structure
 /* Result area */
 .result-display {
     padding: 1rem;
-    line-height: 2rem;
+    line-height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
 }
+#result-text {
+    font-size: 30px;
+        
+}
+
 /* Score area */
 .score {
     line-height: 2.5rem;
