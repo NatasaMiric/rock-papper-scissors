@@ -11,9 +11,15 @@ const btnChoices = document.querySelectorAll(".btn");
 const resultMessage = document.getElementById("result-text");
 const userInput = document.getElementById("player-choice");
 const compInput = document.getElementById("computer-choice");
+let playerScore = document.getElementById("player-score");
+let compScore = document.getElementById("comp-score");
 let userChoice;
 let compChoice;
 let result;
+let pScore= 0;
+let cScore= 0;
+
+
 
 /* Select all three buttons, iterate through buttons and add event listeners so that everytime 
 when player clicks on the button the id gets targeted and then it gets displayed 
@@ -44,48 +50,58 @@ function generateComputerInput() {
     }
     if (randomNum === 2) {
 
-        compChoice = "papper";
+        compChoice = "paper";
     }
     if (randomNum === 3) {
 
         compChoice = "scissors";
     }
     compInput.innerHTML = compChoice;
-
 }
-/* Compare the user and computers input and inform user if he wins or loses.
- Assign the inner.HTML property to result message in order to be displayed on user's screen.
+
+/* Compare the user and computers input,inform user if he wins or loses and increment the score
+of the winner.
+ Assign the inner.HTML property to result message player and computer score in order to be displayed on user's screen.
  */
 function checkWinner() {
 
     if (userChoice === compChoice) {
-        result = "It's a Tie!";
+        result = "It's a Tie!";        
     }
-    if (userChoice === "rock" && compChoice === "papper") {
+    if (userChoice === "rock" && compChoice === "paper") {
 
         result = "You Loose!";
+        cScore++;        
     }
     if (userChoice === "rock" && compChoice === "scissors") {
 
-        result = " You Win!";
+        result = " You Win!"; 
+        pScore++;       
     }
-    if (userChoice === "papper" && compChoice === "scissors") {
+    if (userChoice === "paper" && compChoice === "scissors") {
 
-        result = "You Loose!";
+        result = "You Loose!"; 
+        cScore++;       
     }
-    if (userChoice === "papper" && compChoice === "rock") {
+    if (userChoice === "paper" && compChoice === "rock") {
 
-        result = "You Win!";
+        result = "You Win!"; 
+        pScore++;       
     }
     if (userChoice === "scissors" && compChoice === "rock") {
 
-        result = "You Loose!";
+        result = "You Loose!";    
+        cScore++;    
     }
-    if (userChoice === "scissors" && compChoice === "papper") {
+    if (userChoice === "scissors" && compChoice === "paper") {
 
-        result = "You Win!";
+        result = "You Win!";   
+        pScore++;     
     }
 
     resultMessage.innerHTML = result;
-
+    playerScore.innerHTML = pScore;
+    compScore.innerHTML = cScore;
 }
+
+
