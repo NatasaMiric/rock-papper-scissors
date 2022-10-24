@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <!-- 404 Favicon Errors prevention-->
     <link rel="icon" href="data:;base64,=">
 
     <link rel="stylesheet" href="assets/css/styles.css">
-   
+
     <title>Rock Paper Scissors Game</title>
 </head>
 
@@ -20,10 +20,10 @@
         <h1>Rock Paper Scissors Game</h1>
     </header>
     <!-- The description of rules -->
-    <section class="rules">
+    <div class="rules">
         <h2>Rules</h2>
         <p>⟪ Rock wins against scissors ⟫ Scissors win against paper ⟫ Paper wins against rock ⟪</p>
-    </section>
+    </div>
     <!-- The play area where user can choose between three options-->
     <div class="play-area">
         <div>
@@ -31,14 +31,14 @@
         </div>
         <div class="choices">
             <button aria-label="rock" class="btn btn--blue" id="rock"> ✊</button>
-            <button aria-label="paper"  class="btn btn--purple" id="paper">✋</button>
+            <button aria-label="paper" class="btn btn--green" id="paper">✋</button>
             <button aria label="scissors" class="btn btn--pink" id="scissors"> ✌️</button>
         </div>
     </div>
     <!-- Displays users and computer choice and message who is the winner -->
-    <div class="result-display">  
-        <div id="result-text">You Win!</div>             
-        <div>Player: <span id="player-choice"></span></div>        
+    <div class="result-display">
+        <div id="result-text">You Win!</div>
+        <div>Player: <span id="player-choice"></span></div>
         <div>Computer: <span id="computer-choice"></span></div>
     </div>
     <!-- Displays user and computer score -->

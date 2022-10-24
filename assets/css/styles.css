@@ -1,22 +1,26 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
- 
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* Sett up background color on page and apply general text style */
 body {
-    background-color: #3f4344;
+    background-color: #7453c0; 
     font-family: 'Luckiest Guy', sans-serif;
     letter-spacing: 3px;
-    color: #8BFEAA;
+    color: #fffb25;
     text-align: center;
+    min-height: 100%;
+   
 }
+
 /* Style for the title */
 header {
-    padding: 2rem;
+    margin-top: 2rem;
 }
 
 header>h1 {
@@ -25,13 +29,16 @@ header>h1 {
 
 h1,
 h2 {
-    text-shadow: 2px 2px rgb(230, 73, 230);
+    text-shadow: 2px 2px rgb(250, 72, 235); 
 }
+
 /* Rules area */
 .rules {
-    margin: 0 1rem;
-    line-height: 3rem;    
+    margin: 1.5rem;
+    line-height: 3rem;
+
 }
+
 /* Add flex on play area so that the buttons stand on the same line
 and to achieve responsive layout structure 
  */
@@ -41,8 +48,9 @@ and to achieve responsive layout structure
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;     
+    flex-wrap: wrap;
 }
+
 /* Styling of buttons */
 .choices {
     margin-top: 1rem;
@@ -57,27 +65,27 @@ and to achieve responsive layout structure
     font-size: 38px;
     outline: none;
     border: none;
-
 }
 
 .btn--blue {
-    background-color: #78c7f5;
+    background-color: #68f1f1;
 }
 
-.btn--purple {
-    background-color: #8f61d8;
+.btn--green {
+    background-color: #5dee95;
 }
 
 .btn--pink {
-    background-color: #e7699e;
+    background-color: #fa77fa;
 }
 
-.btn:hover {    
+.btn:hover {
     cursor: pointer;
     transform: scale(1.2);
     border: 3px solid yellow
 }
-/* Result area */
+
+/* Styling for result area */
 .result-display {
     padding: 1rem;
     line-height: 3rem;
@@ -85,11 +93,12 @@ and to achieve responsive layout structure
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin: 1rem;
 }
+
 #result-text {
-    font-size: 30px;           
+    font-size: 30px;
 }
 
 /* Score area */
@@ -102,10 +111,32 @@ and to achieve responsive layout structure
     font-size: 30px;
 }
 
+/* 
+Media query for screens with min width of 600px.
+Setting up larger buttons for bigger screen sizes and
+changing the order of result display children.
+*/
 @media screen and (min-width: 600px) {
     .btn {
         width: 100px;
         height: 100px;
         font-size: 50px;
+    }
+
+    .result-display {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .result-display :nth-child(1) {
+        order: 2;
+    }
+
+    .result-display :nth-child(2) {
+        order: 1;
+    }
+
+    .result-display :nth-child(3) {
+        order: 3;
     }
 }
