@@ -15,7 +15,7 @@ let userChoice;
 let compChoice;
 let result;
 
-/* Select all three buttons and add event listeners so that everytime 
+/* Select all three buttons, iterate through buttons and add event listeners so that everytime 
 when player clicks on the button the id gets targeted and then it gets displayed 
 in  player's choice field with the use of inner.HTML property.
 Add the function that generates computer's choice and 

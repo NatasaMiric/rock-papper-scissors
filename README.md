@@ -1,6 +1,6 @@
-#ROCK PAPPER SCISSORS GAME
+#ROCK PAPER SCISSORS GAME
 
-The Rock Papper Scissors game is a fun game that can be played anywhere and anytime between at least two person with the help of their own hands. This game can be played by children and adults and the rules are very simple. Rock wins against scissors, scissors win against paper and paper wins against rock. In this version the user will play against the computer which means that he will always be able to have a teammate available and avoid searching for a person to play with. Rock Papper Scissors game will help the users to have some fun and relax.
+The Rock Paper Scissors game is a fun game that can be played anywhere and anytime between at least two person with the help of their own hands. This game can be played by children and adults and the rules are very simple. Rock wins against scissors, scissors win against paper and paper wins against rock. In this version the user will play against the computer which means that he will always be able to have a teammate available and avoid searching for a person to play with. Rock Paper Scissors game will help the users to have some fun and relax.
 
 
 ## Contents

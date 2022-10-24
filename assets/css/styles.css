@@ -30,7 +30,7 @@ h2 {
 /* Rules area */
 .rules {
     margin: 0 1rem;
-    line-height: 3rem;
+    line-height: 3rem;    
 }
 /* Add flex on play area so that the buttons stand on the same line
 and to achieve responsive layout structure 
@@ -50,13 +50,14 @@ and to achieve responsive layout structure
 
 .btn {
     margin: 1rem;
-    width: 100px;
-    height: 100px;
+    width: 57px;
+    height: 57px;
     transition: all 0.3s ease;
     border-radius: 50%;
-    font-size: 50px;
+    font-size: 38px;
     outline: none;
     border: none;
+
 }
 
 .btn--blue {
@@ -74,6 +75,7 @@ and to achieve responsive layout structure
 .btn:hover {    
     cursor: pointer;
     transform: scale(1.2);
+    border: 3px solid yellow
 }
 /* Result area */
 .result-display {
@@ -98,4 +100,12 @@ and to achieve responsive layout structure
 
 .score>span {
     font-size: 30px;
+}
+
+@media screen and (min-width: 600px) {
+    .btn {
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+    }
 }
