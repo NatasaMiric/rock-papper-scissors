@@ -36,10 +36,16 @@ The Rock Paper Scissors game is a fun game that can be played anywhere and anyti
 * As a visiting user, I would like to be able to make a choice between rock, papper and scissors.
 * As a visiting user, I would like to be able to see my choice and computer's choice.
 * As a visiting user, I would like to be able to see the outcome of our moves.
-* As a visiting user, I would like to be able to follow the result of the game.
+* As a visiting user, I would like to be able to follow the score of the game.
 
 ## Design
+
 ### Colour Scheme
+
+![](docs/colorpalette.png)
+
+The chosen colors are vibrant and bright to add a positive character and playfulness to the website.
+
 ### Typography
 
 [Google Fonts](https://fonts.google.com/) was used for the following font: 
@@ -50,16 +56,31 @@ The Rock Paper Scissors game is a fun game that can be played anywhere and anyti
 
  Wireframes were created for the desktop and mobile.
 
+ ![Desktop and mobile wireframe](docs/wireframes/wireframes.png)
+
  ## Features
 ### Existing features
 
 **Header**
 
+![](docs/wireframes/header.png)
+
 **Rules**
 
-**The Game Options**
+![](docs/wireframes/rules.png)
+
+**The play buttons**
+
+![](docs/wireframes/playbuttons.png)
+
 
 **The Game result**
+
+![](docs/wireframes/result.png)
+
+**Footer**
+
+![](docs/wireframes/footer.png)
 
 ### Future Implementations
 
