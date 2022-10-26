@@ -26,6 +26,9 @@ Visit the deployed site: [Rock Paper Scissors Game](https://natasamiric.github.i
   * [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used) 
 
 * [Testing](#Testing)
+  * [Validator Testing](#validator-testing)
+  * [Lighthouse](#lighthouse)
+  * [Testing User Stories](#testing-user-stories)
       
  * [Deployment](#Deployment)
 
@@ -116,6 +119,7 @@ The chosen colors for the buttons are vibrant and bright to add a positive chara
 ### Future Implementations
 
 ## Technologies Used
+
 ### Languages Used
 
 HTML, CSS and Java Script were used for creating this project. 
@@ -138,8 +142,43 @@ Google Dev Tools - to troubleshoot and test features, and solve issues with resp
 
 [Adobe Color](https://color.adobe.com/create/color-wheel) - was used for creating a color palette.
 
-
 ## Testing
+
+Testing was conducted throughout the website development with the help of Dev Tools. External links are tested on all browsers and they are opening in a new tab and lead to intended destination. 
+
+* I confirmed that this project is responsive, looks good and functions on standard screen sizes using the devtools device toolbar. 
+* The website has been checked on multiple browsers and mobile devices:
+
+  * Google Chrome
+  * Firefox
+  * Opera
+  * Microsoft Edge
+  * Samsung Galaxy S10+
+  * Galaxy Fold
+  * Samsung Galaxy S8
+  * Samsung Galaxy S20 Ultra
+  * Iphone 5/6/7/8
+  * Iphone 12 Pro
+  * Ipad Pro
+  * Ipad Mini
+
+### Validator Testing
+
+* HTML
+  * No errors returned when passing through the official W3C validator.
+* CSS
+  * No errors found when passing through the official Jigsaw validator.
+* Java Script
+  * The code has passed through the JSHint validator. 
+
+### Lighthouse
+
+* I run the lighthouse test for desktop and mobile to confirm that the page has good accessibility and to check other important parameters.
+
+![](docs/testing/desktoplighthouse.png)
+![](docs/testing/mobilelighthouse.png)
+
+### Testing User Stories
 
 ## Deployment
 
@@ -169,6 +208,8 @@ Google Dev Tools - to troubleshoot and test features, and solve issues with resp
   * Then click on the pages link that is found on the navigation bar on the left side.
   * Check the source section on the page, and choose main instead of none.
   * Then click Save. After a few minutes, you can see your live GitHub page site is now deployed and the URL is shown at the top of the page.
+
+  Live GitHub page: https://natasamiric.github.io/rock-papper-scissors/
 
 
 ## Credits
