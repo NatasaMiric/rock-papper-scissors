@@ -88,7 +88,7 @@ The chosen colors for the buttons are vibrant and bright to add a positive chara
 * The Game Options includes an instruction for the user to make a move and an option of three clickable buttons presented in a form of emojis for rock, paper and scissors.
 * This section provides and interactive buttons where the user can make a selection and play the game. 
 
-![](docs/wireframes/playbuttons.png)
+![](docs/wireframes/gameoptions.png)
 
 
 **The Game result**
