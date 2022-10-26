@@ -57,6 +57,8 @@ The chosen colors are vibrant and bright to add a positive character and playful
 
  * Font-family: 'Luckiest Guy', cursive;
 
+ The emojis were imported from the [Get Emoji](https://getemoji.com/).
+
  ### Wireframes
 
  Wireframes were created for the desktop and mobile.
@@ -64,26 +66,50 @@ The chosen colors are vibrant and bright to add a positive character and playful
  ![Desktop and mobile wireframe](docs/wireframes/wireframes.png)
 
  ## Features
+ 
 ### Existing features
 
 **Header**
+
+* Featured on the top of the page and consisting the name of the game Rock Paper Scissors Game.
+* Fun font and large size of the header clearly tells the user what game they are playing.
 
 ![](docs/wireframes/header.png)
 
 **Rules**
 
+* Beneath the header, rules of the game Rock Paper Scissors are displayed.
+* This section is valuable to the user to understand how the game is played.  
+
 ![](docs/wireframes/rules.png)
 
-**The play buttons**
+**The Game Options**
+
+* The Game Options includes an instruction for the user to make a move and an option of three clickable buttons presented in a form of emojis for rock, paper and scissors.
+* This section provides and interactive buttons where the user can make a selection and play the game. 
 
 ![](docs/wireframes/playbuttons.png)
 
 
 **The Game result**
 
+* The Game result is positioned underneath the option buttons and shows the user's and computer's choice with the announcement if a user wins or loses, or is it a tie.
+* When the user makes a selection, the Java Script code randomly generates the computer's choice and the announcement of the result is presented to the user.  
+* The results are valuable to the user to know what computer has selected and if he won or lost the round.  
+
 ![](docs/wireframes/result.png)
 
+**Score**
+
+* The score is showing user's and computer's point and updating in each round depending on who is the winner. 
+* It helps the user to keep updated who leads the game and who will be the winner.   
+
+![](docs/wireframes/score.png)
+
 **Footer**
+
+* Footer is located at the bottom of the page and contains the GitHub and Linkedin page of the project creator. 
+* It is valuable to the creator to present herself and her work and make new connections.  
 
 ![](docs/wireframes/footer.png)
 
@@ -117,7 +143,7 @@ Google Dev Tools - to troubleshoot and test features, and solve issues with resp
 
 ## Deployment
 
-* via gitpod
+* via Gitpod
   * Log into GitHub.
   * Make a repository from Code Institute template
   * Click the green button close to the top of the page that says Gitpod.
@@ -135,7 +161,7 @@ Google Dev Tools - to troubleshoot and test features, and solve issues with resp
   * Hereafter write 'git push'.
   * Your code has now been pushed back and saved on your GitHub repository.
 
-  * via GitHub pages
+* via GitHub pages
   * Log into GitHub.
   * Go to the repositories.
   * Then take this project Rock Paper Scissors.
