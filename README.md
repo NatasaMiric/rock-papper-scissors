@@ -49,7 +49,7 @@ Visit the deployed site: [Rock Paper Scissors Game](https://natasamiric.github.i
 
 ![](docs/colorpalette.png)
 
-The chosen colors are vibrant and bright to add a positive character and playfulness to the website.
+The chosen colors for the buttons are vibrant and bright to add a positive character and playfulness to the website. The dark grey background color provides good contrast. 
 
 ### Typography
 
@@ -66,7 +66,7 @@ The chosen colors are vibrant and bright to add a positive character and playful
  ![Desktop and mobile wireframe](docs/wireframes/wireframes.png)
 
  ## Features
- 
+
 ### Existing features
 
 **Header**

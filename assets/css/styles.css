@@ -9,14 +9,15 @@
 
 /* Sett up background color on page and apply general text style */
 body {
-    background-color: #a08cd3;
+    background-color: #464747;
     font-family: 'Luckiest Guy', sans-serif;
     letter-spacing: 3px;
     color: #fffb25;
     text-align: center;
     min-height: 95vh;
     max-width: 1000px;
-    margin: 0 auto;    
+    margin: 0 auto;   
+    text-shadow: 2px 2px black; 
 }
 
 /* Style for the title */
@@ -24,20 +25,14 @@ header {
     margin: 2rem;
 }
 
-header>h1 {
+header > h1 {
     font-size: 200%;
-}
-
-h1,
-h2 {
-    text-shadow: 2px 2px rgb(250, 72, 235);
 }
 
 /* Rules area */
 .rules {
     margin: 1.5rem;
     line-height: 3rem;
-
 }
 
 /* Add flex on play area so that the buttons stand on the same line
@@ -120,7 +115,7 @@ footer {
 
 footer>a {
     font-size: 30px;
-    color: black;
+    color: white;
     margin: 1rem;
 }
 
