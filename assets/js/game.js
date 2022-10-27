@@ -1,11 +1,9 @@
-
-let userChoice;
-let compChoice;
-const CHOICES = ['rock', 'paper', 'scissors'];
-
+let pScore = 0;
+let cScore = 0;
 
 function generateComputerInput() {    
     let randomNum = Math.floor(Math.random() * 3);
+    const CHOICES = ['rock', 'paper', 'scissors'];
     compChoice = CHOICES[randomNum];
     let compInput = document.getElementById("computer-choice");
     compInput.innerHTML = compChoice;
@@ -18,17 +16,12 @@ function isUserWinner(userChoice, compChoice) {
     || (userChoice === "scissors" && compChoice === "paper");
 }
 
-function checkWinner() {
-    let result = null;
-    let playerScore = document.getElementById("player-score");
-    let compScore = document.getElementById("comp-score");    
-    let pScore =  playerScore.innerHTML ;
-    let cScore = compScore.innerHTML;
+function checkWinner(userChoice, compChoice) {
+    let result = null;    
 
     if (userChoice === compChoice) {
         result = "It's a Tie!";        
-    }
-    else if (isUserWinner(userChoice,compChoice)) {
+    } else if (isUserWinner(userChoice,compChoice)) {
         result = "You Win!";
         pScore++;        
     } else {
@@ -37,20 +30,22 @@ function checkWinner() {
     }
     
     let resultMessage = document.getElementById("result-text");
-    resultMessage.innerHTML = result;        
+    resultMessage.innerHTML = result; 
+    document.getElementById("player-score").innerHTML = pScore; 
+    document.getElementById("comp-score").innerHTML = cScore;          
 }
  
 function selectUserInput(event) {
-    userChoice = event.target.id;
+    let userChoice = event.target.id;
     let userInput = document.getElementById("player-choice");
     userInput.innerHTML = userChoice;
-    compChoice = generateComputerInput();
-    checkWinner();    
+    let compChoice = generateComputerInput();
+    checkWinner(userChoice, compChoice);    
 }
 
 function initializeGame(){
     let btnChoices = document.querySelectorAll(".btn");
     btnChoices.forEach(button => button.addEventListener('click', selectUserInput));
-}
+ }
 
 window.addEventListener('DOMContentLoaded', initializeGame);
