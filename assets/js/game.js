@@ -1,6 +1,6 @@
 let pScore = 0;
 let cScore = 0;
-
+// Generetes random number and displaying random computer choice
 function generateComputerInput() {    
     let randomNum = Math.floor(Math.random() * 3);
     const CHOICES = ['rock', 'paper', 'scissors'];
@@ -15,7 +15,7 @@ function isUserWinner(userChoice, compChoice) {
     || (userChoice === "paper" && compChoice === "rock") 
     || (userChoice === "scissors" && compChoice === "paper");
 }
-
+// Compares user and computer choice and increments the score depending who wins
 function checkWinner(userChoice, compChoice) {
     let result = null;    
 
@@ -34,7 +34,7 @@ function checkWinner(userChoice, compChoice) {
     document.getElementById("player-score").innerHTML = pScore; 
     document.getElementById("comp-score").innerHTML = cScore;          
 }
- 
+// Callback function that executes after user's click on button
 function selectUserInput(event) {
     let userChoice = event.target.id;
     let userInput = document.getElementById("player-choice");
@@ -42,7 +42,7 @@ function selectUserInput(event) {
     let compChoice = generateComputerInput();
     checkWinner(userChoice, compChoice);    
 }
-
+// Add event listeners to buttons
 function initializeGame(){
     let btnChoices = document.querySelectorAll(".btn");
     btnChoices.forEach(button => button.addEventListener('click', selectUserInput));

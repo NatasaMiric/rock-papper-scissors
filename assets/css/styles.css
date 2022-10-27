@@ -103,7 +103,7 @@ header > h1 {
     padding-bottom: 2rem;
 }
 
-.score>span {
+.score > span {
     font-size: 30px;
 }
 /* Footer positioned at the bottom of the page*/
@@ -113,7 +113,7 @@ footer {
     padding: 1rem;          
 }
 
-footer>a {
+footer > a {
     font-size: 30px;
     color: white;
     margin: 1rem;
