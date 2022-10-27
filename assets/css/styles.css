@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* Sett up background color on page and apply general text style */
+/* Set up background color on page and apply general text style */
 body {
     background-color: #464747;
     font-family: 'Luckiest Guy', sans-serif;
@@ -35,8 +35,8 @@ header > h1 {
     line-height: 3rem;
 }
 
-/* Add flex on play area so that the buttons stand on the same line
-and to achieve responsive layout structure 
+/* Add flex on play area so that the buttons stand
+ on the same line and to achieve responsive layout structure 
  */
 .play-area {
     display: flex;
@@ -106,7 +106,7 @@ and to achieve responsive layout structure
 .score>span {
     font-size: 30px;
 }
-/* Footer positioned on the bottom of the page*/
+/* Footer positioned at the bottom of the page*/
 footer {
     position: sticky;
     top: 95vh; 

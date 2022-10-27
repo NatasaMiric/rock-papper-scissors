@@ -1,10 +1,10 @@
- 
+
 let userChoice;
 let compChoice;
-const CHOICES = ['rock', 'paper', 'scissor'];
+const CHOICES = ['rock', 'paper', 'scissors'];
 
-function generateComputerInput() {
 
+function generateComputerInput() {    
     let randomNum = Math.floor(Math.random() * 3);
     compChoice = CHOICES[randomNum];
     let compInput = document.getElementById("computer-choice");
@@ -18,17 +18,17 @@ function isUserWinner(userChoice, compChoice) {
     || (userChoice === "scissors" && compChoice === "paper");
 }
 
-function checkWinner(userChoice, compChoice) {
+function checkWinner() {
     let result = null;
     let playerScore = document.getElementById("player-score");
-    let compScore = document.getElementById("comp-score");
+    let compScore = document.getElementById("comp-score");    
     let pScore =  playerScore.innerHTML ;
     let cScore = compScore.innerHTML;
 
     if (userChoice === compChoice) {
         result = "It's a Tie!";        
     }
-    else if (isUserWinner()) {
+    else if (isUserWinner(userChoice,compChoice)) {
         result = "You Win!";
         pScore++;        
     } else {
@@ -37,15 +37,15 @@ function checkWinner(userChoice, compChoice) {
     }
     
     let resultMessage = document.getElementById("result-text");
-    resultMessage.innerHTML = result;    
+    resultMessage.innerHTML = result;        
 }
-
+ 
 function selectUserInput(event) {
     userChoice = event.target.id;
     let userInput = document.getElementById("player-choice");
     userInput.innerHTML = userChoice;
-    computerChoice = generateComputerInput();
-    checkWinner(userChoice, computerChoice);    
+    compChoice = generateComputerInput();
+    checkWinner();    
 }
 
 function initializeGame(){
