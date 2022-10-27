@@ -1,19 +1,13 @@
  
 
 const btnChoices = document.querySelectorAll(".btn");
-
 const userInput = document.getElementById("player-choice");
 const compInput = document.getElementById("computer-choice");
-let playerScore = document.getElementById("player-score");
-let compScore = document.getElementById("comp-score");
+
 let userChoice;
 let compChoice;
 
-let pScore= 0;
-let cScore= 0;
-
-
-
+const CHOICES = ['rock', 'paper', 'scissor'];
 
 btnChoices.forEach(button => button.addEventListener('click', () => {
 
@@ -26,21 +20,11 @@ btnChoices.forEach(button => button.addEventListener('click', () => {
 
 function generateComputerInput() {
 
-    const randomNum = Math.floor(Math.random() * 3) + 1;
-
-    if (randomNum === 1) {
-
-        compChoice = "rock";
-    }
-    if (randomNum === 2) {
-
-        compChoice = "paper";
-    }
-    if (randomNum === 3) {
-
-        compChoice = "scissors";
-    }
+    let randomNum = Math.floor(Math.random() * 3);
+    compChoice = CHOICES[randomNum];
+    
     compInput.innerHTML = compChoice;
+    return compChoice;    
 }
 
 function isUserWinner(userChoice, compChoice) {
@@ -51,6 +35,8 @@ function isUserWinner(userChoice, compChoice) {
 
 function checkWinner(userChoice, compChoice) {
     let result = null;
+    let playerScore = document.getElementById("player-score");
+    let compScore = document.getElementById("comp-score");
     let pScore =  playerScore.innerHTML ;
     let cScore = compScore.innerHTML;
 
@@ -66,9 +52,7 @@ function checkWinner(userChoice, compChoice) {
     }
     
     let resultMessage = document.getElementById("result-text");
-    resultMessage.innerHTML = result;
-    playerScore.innerHTML = pScore;
-    compScore.innerHTML = cScore;
+    resultMessage.innerHTML = result;    
 }
 
 
