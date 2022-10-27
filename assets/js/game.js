@@ -1,3 +1,5 @@
+let userChoice= "";
+let compChoice = "";
 let pScore = 0;
 let cScore = 0;
 // Generetes random number and displaying random computer choice
@@ -36,10 +38,10 @@ function checkWinner(userChoice, compChoice) {
 }
 // Callback function that executes after user's click on button
 function selectUserInput(event) {
-    let userChoice = event.target.id;
+    userChoice = event.target.id;
     let userInput = document.getElementById("player-choice");
     userInput.innerHTML = userChoice;
-    let compChoice = generateComputerInput();
+    compChoice = generateComputerInput();
     checkWinner(userChoice, compChoice);    
 }
 // Add event listeners to buttons
@@ -49,3 +51,5 @@ function initializeGame(){
  }
 
 window.addEventListener('DOMContentLoaded', initializeGame);
+
+
