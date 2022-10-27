@@ -1,28 +1,13 @@
  
-
-const btnChoices = document.querySelectorAll(".btn");
-const userInput = document.getElementById("player-choice");
-const compInput = document.getElementById("computer-choice");
-
 let userChoice;
 let compChoice;
-
 const CHOICES = ['rock', 'paper', 'scissor'];
-
-btnChoices.forEach(button => button.addEventListener('click', () => {
-
-    userChoice = button.id;
-    userInput.innerHTML = userChoice;
-    generateComputerInput();
-    checkWinner();
-}));
-
 
 function generateComputerInput() {
 
     let randomNum = Math.floor(Math.random() * 3);
     compChoice = CHOICES[randomNum];
-    
+    let compInput = document.getElementById("computer-choice");
     compInput.innerHTML = compChoice;
     return compChoice;    
 }
@@ -55,4 +40,17 @@ function checkWinner(userChoice, compChoice) {
     resultMessage.innerHTML = result;    
 }
 
+function selectUserInput(event) {
+    userChoice = event.target.id;
+    let userInput = document.getElementById("player-choice");
+    userInput.innerHTML = userChoice;
+    computerChoice = generateComputerInput();
+    checkWinner(userChoice, computerChoice);    
+}
 
+function initializeGame(){
+    let btnChoices = document.querySelectorAll(".btn");
+    btnChoices.forEach(button => button.addEventListener('click', selectUserInput));
+}
+
+window.addEventListener('DOMContentLoaded', initializeGame);
