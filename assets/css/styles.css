@@ -16,9 +16,8 @@ body {
     text-align: center;
     min-height: 95vh;
     max-width: 1000px;
-    margin: 0 auto;
-    text-shadow: 2px 2px black;
-}
+    margin: 0 auto;    
+} 
 
 /* Style for the title */
 header {
@@ -27,7 +26,7 @@ header {
 
 header>h1 {
     font-size: 200%;
-    color: #5dee95;
+    color: #8b92f8;
 }
 
 /* Add flex on play area to achieve responsive layout structure */
@@ -101,11 +100,11 @@ header>h1 {
 /* Score area */
 .score {
     line-height: 2.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .score>span {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /* Rules area */
@@ -116,7 +115,7 @@ header>h1 {
 .rules {
     font-family: 'Lato', sans-serif;
     margin: 0 1rem;
-    line-height: 3rem;
+    line-height: 2.5rem;
 }
 
 /* Footer positioned at the bottom of the page*/

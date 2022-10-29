@@ -1,12 +1,12 @@
 #ROCK PAPER SCISSORS LIZARD SPOCK GAME
 
-The Rock Paper Scissors Lizard Spock game is an extended version of an old, classic Rock Paper Scissors game that appeared first time on a TV Show named "The Big Bang Theory". This new version of the game has provided the players with much more choices, which means that it added some complexity and fun. 
+The Rock Paper Scissors Lizard Spock game is an extended version of an old, classic Rock Paper Scissors game. Namely, it appeared first time on a TV Show named "The Big Bang Theory". This new version of the game has provided the players with much more choices, which means that it added some complexity, fun and reduced the chances od a tie match. 
 
-In this version, the user will play against the computer which means that he will always be able to have an opponent available to play with. The user will be presented with and choose one of the five options- Rock, Paper, Scissors, Lizard, Spock - that he will be able to click on, while the opponent (computer) will throw out a random selection. Rock Paper Scissors Lizard Game game will bring the fun to the users, and perhaps help to settle a dispute instead of going with the old way of flipping a coin.
+In this version, the user will play against the computer which means that he will always be able to have an opponent available to play with. The user will be presented with five options and choose one of them in each round - Rock, Paper, Scissors, Lizard, Spock. When user clicks on one option, the opponent (computer) will throw out a random selection. Rock Paper Scissors Lizard Game game will bring the fun to the users, and perhaps help to settle a dispute instead of going with the old way of flipping a coin.
 
 ![](docs/amiresponsive.png)
 
-Visit the deployed site: [Rock Paper Scissors Game](https://natasamiric.github.io/rock-papper-scissors/)
+Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasamiric.github.io/rock-papper-scissors-lizard-spock/)
 
 ## Contents
 
@@ -57,8 +57,9 @@ The chosen colors for the buttons are vibrant and bright to add a positive chara
 ### Typography
 
 [Google Fonts](https://fonts.google.com/) was used for the following font: 
-
- * Font-family: 'Luckiest Guy', cursive;
+ 
+ * Font-family: 'Lato', sans-serif- for the rules description.
+ * Font-family: 'Luckiest Guy' - for the rest of the content on the page. 
 
  The emojis were imported from the [Get Emoji](https://getemoji.com/).
 
@@ -66,7 +67,7 @@ The chosen colors for the buttons are vibrant and bright to add a positive chara
 
  Wireframes were created for the desktop and mobile.
 
- ![Desktop and mobile wireframe](docs/wireframes/wireframes.png)
+ [Desktop and mobile wireframe](docs/wireframes/wireframe.png)
 
  ## Features
 
@@ -74,24 +75,17 @@ The chosen colors for the buttons are vibrant and bright to add a positive chara
 
 **Header**
 
-* Featured on the top of the page and consisting the name of the game Rock Paper Scissors Game.
+* Featured on the top of the page and consisting the name of the Rock Paper Scissors Lizard Spock Game.
 * Fun font and large size of the header clearly tells the user what game they are playing.
 
 ![](docs/wireframes/header.png)
 
-**Rules**
-
-* Beneath the header, rules of the game Rock Paper Scissors are displayed.
-* This section is valuable to the user to understand how the game is played.  
-
-![](docs/wireframes/rules.png)
-
 **The Game Options**
 
-* The Game Options includes an instruction for the user to make a move and an option of three clickable buttons presented in a form of emojis for rock, paper and scissors.
+* The Game Options includes an instruction for the user to make a move and an option of five clickable buttons presented in a form of emojis for rock, paper, scissors, lizard and spock.
 * This section provides and interactive buttons where the user can make a selection and play the game. 
 
-![](docs/wireframes/gameoptions.png)
+![](docs/wireframes/playbuttons.png)
 
 
 **The Game result**
@@ -104,10 +98,17 @@ The chosen colors for the buttons are vibrant and bright to add a positive chara
 
 **Score**
 
-* The score is showing user's and computer's point and updating in each round depending on who is the winner. 
+* The score is showing user's and computer's points and updating in each round depending on who is the winner. 
 * It helps the user to keep updated who leads the game and who will be the winner.   
 
 ![](docs/wireframes/score.png)
+
+**Rules**
+
+* Beneath the score are displayed rules of the game Rock Paper Scissors Lizard Spock.
+* This section is valuable to the user to understand how the game is played.  
+
+![](docs/wireframes/rules.png)
 
 **Footer**
 
@@ -117,6 +118,9 @@ The chosen colors for the buttons are vibrant and bright to add a positive chara
 ![](docs/wireframes/footer.png)
 
 ### Future Implementations
+
+* Making a limited number of rounds for example 5 and announce a winner.
+* Set up a restart game button. 
 
 ## Technologies Used
 
@@ -203,13 +207,13 @@ Testing was conducted throughout the website development with the help of Dev To
 * via GitHub pages
   * Log into GitHub.
   * Go to the repositories.
-  * Then take this project Rock Paper Scissors.
+  * Then take this project Rock Paper Scissors Lizard Spock.
   * Go to the settings link.
   * Then click on the pages link that is found on the navigation bar on the left side.
   * Check the source section on the page, and choose main instead of none.
   * Then click Save. After a few minutes, you can see your live GitHub page site is now deployed and the URL is shown at the top of the page.
 
-  Live GitHub page: https://natasamiric.github.io/rock-papper-scissors/
+  Live GitHub page: (https://natasamiric.github.io/rock-papper-scissors-lizard-spock/)
 
 
 ## Credits
