@@ -1,8 +1,8 @@
-#ROCK PAPER SCISSORS GAME
+#ROCK PAPER SCISSORS LIZARD SPOCK GAME
 
-The Rock Paper Scissors game is a fun game that can be played anywhere and anytime between at least two people with the help of their own hands. This game can be played by children and adults and the rules are very simple. Rock wins against scissors, scissors win against paper and paper wins against the rock.
+The Rock Paper Scissors Lizard Spock game is an extended version of an old, classic Rock Paper Scissors game that appeared first time on a TV Show named "The Big Bang Theory". This new version of the game has provided the players with much more choices, which means that it added some complexity and fun. 
 
-In this version, the user will play against the computer which means that he will always be able to have an opponent available to play with. The user will be presented with three options - rock, paper, scissors - that he will click on, while the opponent (computer) will throw out a random selection. Rock Paper Scissors game will help the users to have some fun, relax, and perhaps in making a decision instead of going with the old way of flipping a coin.
+In this version, the user will play against the computer which means that he will always be able to have an opponent available to play with. The user will be presented with and choose one of the five options- Rock, Paper, Scissors, Lizard, Spock - that he will be able to click on, while the opponent (computer) will throw out a random selection. Rock Paper Scissors Lizard Game game will bring the fun to the users, and perhaps help to settle a dispute instead of going with the old way of flipping a coin.
 
 ![](docs/amiresponsive.png)
 
