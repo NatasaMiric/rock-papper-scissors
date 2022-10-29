@@ -158,8 +158,8 @@ I performed testing of buttons to make sure that everytime I click:
   * Score gets updated after each round. 
   * Result message is displayed after every move. 
 
+I confirmed that this project is responsive, looks good and functions on standard screen sizes using the devtools device toolbar.
 
-* I confirmed that this project is responsive, looks good and functions on standard screen sizes using the devtools device toolbar. 
 * The website has been checked on multiple browsers and mobile devices:
 
   * Google Chrome
@@ -253,5 +253,13 @@ I performed testing of buttons to make sure that everytime I click:
 
 ## Credits
 ### Code Used
-###  Media
+
+* I reviewed several tutorials on how to build a Rock Paper Scissors game which were very informative and helped me to get a perception of how to do it on my own. 
+
+[Code with Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=631s)
+
+[Web Dev Simplified](https://www.youtube.com/watch?v=1yS-JV4fWqY&t=1002s)
+
+[freeCodeCamp](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=4297s)
+
 ###  Acknowledgments
