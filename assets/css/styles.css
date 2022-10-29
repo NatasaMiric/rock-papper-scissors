@@ -60,7 +60,7 @@ header>h1 {
 }
 
 .btn--orange {
-    background-color: #f2a76d;
+    background-color: #fff243;
 }
 
 .btn--pink {
@@ -68,18 +68,17 @@ header>h1 {
 }
 
 .btn--green {
-    background-color: #5dee95;
-    rotate: 260deg;
+    background-color: #5dee95;    
 }
 
 .btn--red {
-    background-color: rgb(235, 69, 69);
+    background-color: #8b92f8;
 }
 
 .btn:hover {
     cursor: pointer;
     transform: scale(1.2);
-    border: 3px solid yellow
+    border: 3px solid rgb(253, 180, 70)
 }
 
 /* Styling for result area */

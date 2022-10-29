@@ -119,7 +119,7 @@ The chosen colors for the buttons are vibrant and bright to add a positive chara
 
 ### Future Implementations
 
-* Making a limited number of rounds for example 5 and announce a winner.
+* Making a limited number of rounds, for example 5, and announce a winner.
 * Set up a restart game button. 
 
 ## Technologies Used
