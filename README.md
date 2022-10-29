@@ -41,7 +41,7 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 ---
 ## User Stories
 
-* As a visiting user, I would like to be able to choose between rock, paper and scissors.
+* As a visiting user, I would like to be able to choose between rock, paper, scissors, lizard and spock.
 * As a visiting user, I would like to be able to see my choice and the computer's choice.
 * As a visiting user, I would like to be able to see the outcome of our moves.
 * As a visiting user, I would like to be able to follow the score of the game.
@@ -150,6 +150,15 @@ Google Dev Tools - to troubleshoot and test features, and solve issues with resp
 
 Testing was conducted throughout the website development with the help of Dev Tools. External links are tested on all browsers and they are opening in a new tab and lead to intended destination. 
 
+I performed testing of buttons to make sure that everytime I click: 
+
+  * Every button is in function and displaying correct value.
+  * It is possible to choose same button several times.
+  * Computer always displays some random value and it is changing it in each round.
+  * Score gets updated after each round. 
+  * Result message is displayed after every move. 
+
+
 * I confirmed that this project is responsive, looks good and functions on standard screen sizes using the devtools device toolbar. 
 * The website has been checked on multiple browsers and mobile devices:
 
@@ -183,6 +192,32 @@ Testing was conducted throughout the website development with the help of Dev To
 ![](docs/testing/mobilelighthouse.png)
 
 ### Testing User Stories
+
+**As a visiting user, I would like to be able to choose between rock, paper, scissors, lizard and spock.**
+
+  * When landing on the page, it is clearly displayed to the user the instruction to make a move and beneath it the five options: rock, paper, scissors, lizard and spock. 
+  * When user hovers over the buttons they magnify and the orange border is present.
+  * User should click on one of the five options. 
+
+  ![](docs/wireframes/playbuttons.png) 
+
+
+**As a visiting user, I would like to be able to see my choice and the computer's choice.**
+
+  * After making a choice/clicking on one of the options, user is able to see his and computer's choice in the result area beneath the play buttons.  
+
+**As a visiting user, I would like to be able to see the outcome of our moves.**
+
+  * Beneath the play buttons is displayed the message after every move. 
+  * After clicking on one of the five options, the user gets the message did he won or lost, or is it a tie. 
+
+![](docs/wireframes/result.png)
+
+**As a visiting user, I would like to be able to follow the score of the game.**
+
+  * After every move/click on button, user is able to see who gets the score and be updated of who is winning the game.  
+
+  ![](docs/wireframes/score.png)
 
 ## Deployment
 
