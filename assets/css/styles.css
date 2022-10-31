@@ -16,7 +16,8 @@ body {
     text-align: center;
     min-height: 95vh;
     max-width: 1000px;
-    margin: 0 auto;    
+    margin: 0 auto; 
+    text-shadow: 2px 2px black;   
 } 
 
 /* Style for the title */
@@ -26,7 +27,7 @@ header {
 
 header>h1 {
     font-size: 200%;
-    color: #8b92f8;
+    color: #eb69fc; 
 }
 
 /* Add flex on play area to achieve responsive layout structure */
