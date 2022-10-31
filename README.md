@@ -103,6 +103,13 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
   ![](docs/wireframes/score.png)
 
+**Restart Game**
+
+  * The restart button allows user to click on it and start a new game from beginning.
+  * This feature is valuable to user because it gives clear instruction to user where he needs to click in order to restart the game instead of clicking on reload page button. 
+
+  ![](docs/wireframes/restart.png)
+
 **Rules**
 
   * Beneath the score are displayed rules of the game Rock Paper Scissors Lizard Spock.
@@ -119,8 +126,7 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
 ### Future Implementations
 
-  * Making a limited number of rounds, for example 5, and announce a winner.
-  * Set up a restart game button. 
+  * Making a limited number of rounds and announce a winner.   
 
 ## Technologies Used
 
