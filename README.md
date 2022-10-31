@@ -50,16 +50,16 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
 ### Colour Scheme
 
-![](docs/colorpalette.png)
+  ![](docs/colorpalette.png)
 
-The chosen colors for the buttons are vibrant and bright to add a positive character and playfulness to the website. The dark grey background color provides good contrast. 
+  The chosen colors for the buttons are vibrant and bright to add a positive character and playfulness to the website. The dark grey background color provides good contrast. 
 
 ### Typography
 
-[Google Fonts](https://fonts.google.com/) was used for the following font: 
+  [Google Fonts](https://fonts.google.com/) was used for the following font: 
  
- * Font-family: 'Lato', sans-serif- for the rules description.
- * Font-family: 'Luckiest Guy' - for the rest of the content on the page. 
+  * Font-family: 'Lato', sans-serif- for the rules description.
+  * Font-family: 'Luckiest Guy' - for the rest of the content on the page. 
 
  The emojis were imported from the [Get Emoji](https://getemoji.com/).
 
@@ -75,82 +75,82 @@ The chosen colors for the buttons are vibrant and bright to add a positive chara
 
 **Header**
 
-* Featured on the top of the page and consisting the name of the Rock Paper Scissors Lizard Spock Game.
-* Fun font and large size of the header clearly tells the user what game they are playing.
+  * Featured on the top of the page and consisting the name of the Rock Paper Scissors Lizard Spock Game.
+  * Fun font and large size of the header clearly tells the user what game they are playing.
 
-![](docs/wireframes/header.png)
+  ![](docs/wireframes/header.png)
 
 **The Game Options**
 
-* The Game Options includes an instruction for the user to make a move and an option of five clickable buttons presented in a form of emojis for rock, paper, scissors, lizard and spock.
-* This section provides and interactive buttons where the user can make a selection and play the game. 
+  * The Game Options includes an instruction for the user to make a move and an option of five clickable buttons presented in a form of emojis for rock, paper, scissors, lizard and spock.
+  * This section provides and interactive buttons where the user can make a selection and play the game. 
 
-![](docs/wireframes/playbuttons.png)
+  ![](docs/wireframes/playbuttons.png)
 
 
 **The Game result**
 
-* The Game result is positioned underneath the option buttons and shows the user's and computer's choice with the announcement if a user wins or loses, or is it a tie.
-* When the user makes a selection, the Java Script code randomly generates the computer's choice and the announcement of the result is presented to the user.  
-* The results are valuable to the user to know what computer has selected and if he won or lost the round.  
+  * The Game result is positioned underneath the option buttons and shows the user's and computer's choice with the announcement if a user wins or loses, or is it a tie.
+  * When the user makes a selection, the Java Script code randomly generates the computer's choice and the announcement of the result is presented to the user.  
+  * The results are valuable to the user to know what computer has selected and if he won or lost the round.  
 
-![](docs/wireframes/result.png)
+  ![](docs/wireframes/result.png)
 
 **Score**
 
-* The score is showing user's and computer's points and updating in each round depending on who is the winner. 
-* It helps the user to keep updated who leads the game and who will be the winner.   
+  * The score is showing user's and computer's points and updating in each round depending on who is the winner. 
+  * It helps the user to keep updated who leads the game and who will be the winner.   
 
-![](docs/wireframes/score.png)
+  ![](docs/wireframes/score.png)
 
 **Rules**
 
-* Beneath the score are displayed rules of the game Rock Paper Scissors Lizard Spock.
-* This section is valuable to the user to understand how the game is played.  
+  * Beneath the score are displayed rules of the game Rock Paper Scissors Lizard Spock.
+  * This section is valuable to the user to understand how the game is played.  
 
-![](docs/wireframes/rules.png)
+  ![](docs/wireframes/rules.png)
 
 **Footer**
 
-* Footer is located at the bottom of the page and contains the GitHub and Linkedin page of the project creator. 
-* It is valuable to the creator to present herself and her work and make new connections.  
+  * Footer is located at the bottom of the page and contains the GitHub and Linkedin page of the project creator. 
+  * It is valuable to the creator to present herself and her work and make new connections.  
 
 ![](docs/wireframes/footer.png)
 
 ### Future Implementations
 
-* Making a limited number of rounds, for example 5, and announce a winner.
-* Set up a restart game button. 
+  * Making a limited number of rounds, for example 5, and announce a winner.
+  * Set up a restart game button. 
 
 ## Technologies Used
 
 ### Languages Used
 
-HTML, CSS and Java Script were used for creating this project. 
+  HTML, CSS and Java Script were used for creating this project. 
 
 ### Programs Used
 
-Balsamiq- was used to create wireframes.
+  Balsamiq- was used to create wireframes.
 
-GitHub- was used to store the project and display it on GitHub Pages.
+  GitHub- was used to store the project and display it on GitHub Pages.
 
-Git -was used for version control.
+  Git -was used for version control.
 
-[Google Fonts](https://fonts.google.com/) - was used to import the fonts used on the website.
+  [Google Fonts](https://fonts.google.com/) - was used to import the fonts used on the website.
 
-[Get Emoji](https://getemoji.com/) - was used for importing the emojis.
+  [Get Emoji](https://getemoji.com/) - was used for importing the emojis.
 
-Google Dev Tools - to troubleshoot and test features, and solve issues with responsiveness and styling.
+  Google Dev Tools - to troubleshoot and test features, and solve issues with responsiveness and styling.
 
-[Am I Responsive?](https://ui.dev/amiresponsive) - was used to show the website image on a range of devices.
+  [Am I Responsive?](https://ui.dev/amiresponsive) - was used to show the website image on a range of devices.
 
-[Adobe Color](https://color.adobe.com/create/color-wheel) - was used for creating a color palette.
+  [Adobe Color](https://color.adobe.com/create/color-wheel) - was used for creating a color palette.
 
 ## Testing
 
-Testing was conducted throughout the website development with the help of Dev Tools. External links are tested on all browsers and they are opening in a new tab and lead to intended destination. 
+  Testing was conducted throughout the website development with the help of Dev Tools. External links are tested on all browsers and they are opening in a new tab and lead to intended destination. 
 
-I performed testing of buttons to make sure that everytime I click: 
+  I performed testing of buttons to make sure that everytime I click: 
 
   * Every button is in function and displaying correct value.
   * It is possible to choose same button several times.
@@ -158,7 +158,7 @@ I performed testing of buttons to make sure that everytime I click:
   * Score gets updated after each round. 
   * Result message is displayed after every move. 
 
-I confirmed that this project is responsive, looks good and functions on standard screen sizes using the devtools device toolbar.
+  I confirmed that this project is responsive, looks good and functions on standard screen sizes using the devtools device toolbar.
 
 * The website has been checked on multiple browsers and mobile devices:
 
@@ -188,8 +188,8 @@ I confirmed that this project is responsive, looks good and functions on standar
 
 * I run the lighthouse test for desktop and mobile to confirm that the page has good accessibility and to check other important parameters.
 
-![](docs/testing/desktoplighthouse.png)
-![](docs/testing/mobilelighthouse.png)
+  ![](docs/testing/desktoplighthouse.png)
+  ![](docs/testing/mobilelighthouse.png)
 
 ### Testing User Stories
 
@@ -211,7 +211,7 @@ I confirmed that this project is responsive, looks good and functions on standar
   * Beneath the play buttons is displayed the message after every move. 
   * After clicking on one of the five options, the user gets the message did he won or lost, or is it a tie. 
 
-![](docs/wireframes/result.png)
+  ![](docs/wireframes/result.png)
 
 **As a visiting user, I would like to be able to follow the score of the game.**
 
@@ -248,18 +248,25 @@ I confirmed that this project is responsive, looks good and functions on standar
   * Check the source section on the page, and choose main instead of none.
   * Then click Save. After a few minutes, you can see your live GitHub page site is now deployed and the URL is shown at the top of the page.
 
-  Live GitHub page: (https://natasamiric.github.io/rock-papper-scissors-lizard-spock/)
+  Live GitHub page: https://natasamiric.github.io/rock-papper-scissors-lizard-spock/
 
 
 ## Credits
 ### Code Used
 
-* I reviewed several tutorials on how to build a Rock Paper Scissors game which were very informative and helped me to get a perception of how to do it on my own. 
+* Several tutorials on developing a Rock Paper Scissors game were viewed but no code was used directly from these tutorials and were used solely for inspiration on how to implement the game. These tutorials are: 
 
-[Code with Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=631s)
+  [Code with Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=631s)
 
-[Web Dev Simplified](https://www.youtube.com/watch?v=1yS-JV4fWqY&t=1002s)
+  [Web Dev Simplified](https://www.youtube.com/watch?v=1yS-JV4fWqY&t=1002s)
 
-[freeCodeCamp](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=4297s)
+  [freeCodeCamp](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=4297s)
+
+### Content
+
+  * The rules of the game were taken from : https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
+### Media
+
+  * The emojis were imported from the [Get Emoji](https://getemoji.com/).
 
 ###  Acknowledgments
