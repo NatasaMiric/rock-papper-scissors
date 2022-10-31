@@ -1,48 +1,63 @@
-let userChoice= "";
+let userChoice = "";
 let compChoice = "";
 let pScore = 0;
 let cScore = 0;
+
+//Restarts the game
+function restartGame() {
+    pScore = 0;
+    cScore = 0;
+    userChoice = null;
+    compChoice = null;
+    result = null;
+    document.getElementById("player-score").innerHTML = 0;
+    document.getElementById("comp-score").innerHTML = 0;    
+    document.getElementById("player-choice").innerHTML = null;
+    document.getElementById("computer-choice").innerHTML = null;    
+    document.getElementById("result-text").innerHTML = null;    
+}
+
 // Generetes random number and displaying random computer choice
-function generateComputerInput() {    
+function generateComputerInput() {
     let randomNum = Math.floor(Math.random() * 5);
     const CHOICES = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     compChoice = CHOICES[randomNum];
     let compInput = document.getElementById("computer-choice");
     compInput.innerHTML = compChoice;
-    return compChoice;    
+    return compChoice;
 }
 
 function isUserWinner(userChoice, compChoice) {
-    return (userChoice === "rock" && compChoice === "scissors")
-    || (userChoice === "paper" && compChoice === "rock") 
-    || (userChoice === "scissors" && compChoice === "paper")
-    || (userChoice === "rock" && compChoice === "lizard")
-    || (userChoice === "lizard" && compChoice === "spock")
-    || (userChoice === "spock" && compChoice === "scissors")
-    || (userChoice === "scissors" && compChoice === "lizard")
-    || (userChoice === "lizard" && compChoice === "paper")
-    || (userChoice === "paper" && compChoice === "spock")
-    || (userChoice === "spock" && compChoice === "rock")
-    || (userChoice === "paper" && compChoice === "spock");
+    return (userChoice === "rock" && compChoice === "scissors") ||
+        (userChoice === "paper" && compChoice === "rock") ||
+        (userChoice === "scissors" && compChoice === "paper") ||
+        (userChoice === "rock" && compChoice === "lizard") ||
+        (userChoice === "lizard" && compChoice === "spock") ||
+        (userChoice === "spock" && compChoice === "scissors") ||
+        (userChoice === "scissors" && compChoice === "lizard") ||
+        (userChoice === "lizard" && compChoice === "paper") ||
+        (userChoice === "paper" && compChoice === "spock") ||
+        (userChoice === "spock" && compChoice === "rock") ||
+        (userChoice === "paper" && compChoice === "spock");
 }
 // Compares user and computer choice and increments the score depending who wins
 function checkWinner(userChoice, compChoice) {
-    let result = null;    
+    let result = null;
 
     if (userChoice === compChoice) {
-        result = "It's a Tie!";        
-    } else if (isUserWinner(userChoice,compChoice)) {
+        result = "It's a Tie!";
+    } else if (isUserWinner(userChoice, compChoice)) {
         result = "You Win!";
-        pScore++;        
+        pScore++;
     } else {
-        result= "Yoo Loose!";
+        result = "Yoo Loose!";
         cScore++;
     }
-    
+
     let resultMessage = document.getElementById("result-text");
-    resultMessage.innerHTML = result; 
-    document.getElementById("player-score").innerHTML = pScore; 
-    document.getElementById("comp-score").innerHTML = cScore;          
+    resultMessage.innerHTML = result;
+    document.getElementById("player-score").innerHTML = pScore;
+    document.getElementById("comp-score").innerHTML = cScore;
 }
 // Callback function that executes after user's click on button
 function selectUserInput(event) {
@@ -50,14 +65,14 @@ function selectUserInput(event) {
     let userInput = document.getElementById("player-choice");
     userInput.innerHTML = userChoice;
     compChoice = generateComputerInput();
-    checkWinner(userChoice, compChoice);    
+    checkWinner(userChoice, compChoice);
 }
 // Add event listeners to buttons
-function initializeGame(){
+function initializeGame() {
     let btnChoices = document.querySelectorAll(".btn");
     btnChoices.forEach(button => button.addEventListener('click', selectUserInput));
- }
+
+    document.getElementById("restart").addEventListener('click', restartGame);  
+};
 
 window.addEventListener('DOMContentLoaded', initializeGame);
-
-

@@ -71,7 +71,7 @@ header>h1 {
     background-color: #5dee95;    
 }
 
-.btn--red {
+.btn--purple {
     background-color: #8b92f8;
 }
 
@@ -79,6 +79,22 @@ header>h1 {
     cursor: pointer;
     transform: scale(1.2);
     border: 3px solid rgb(253, 180, 70)
+}
+
+.restartBtn {
+    font-size: 15px;
+    margin: 1rem;
+    background-color: white; 
+    padding: 1rem;    
+    border-radius: 5%;  
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.restartBtn:hover{
+    background-color: #fa77fa;
+    cursor: pointer;  
+    transform: scale(1.2);  
 }
 
 .result-display {
