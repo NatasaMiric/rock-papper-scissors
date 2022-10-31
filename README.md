@@ -146,6 +146,8 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
   [Adobe Color](https://color.adobe.com/create/color-wheel) - was used for creating a color palette.
 
+  [Font Awesome](https://fontawesome.com/) - was used for the social media icons. 
+
 ## Testing
 
   Testing was conducted throughout the website development with the help of Dev Tools. External links are tested on all browsers and they are opening in a new tab and lead to intended destination. 

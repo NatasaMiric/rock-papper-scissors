@@ -18,9 +18,8 @@ body {
     max-width: 1000px;
     margin: 0 auto; 
     text-shadow: 2px 2px black;   
-} 
+}
 
-/* Style for the title */
 header {
     margin: 2rem;
 }
@@ -40,7 +39,7 @@ header>h1 {
     flex-wrap: wrap;
 }
 
-/* Styling of buttons */
+/* Each button has a different color */
 .choices {
     margin-top: 1rem;
 }
@@ -82,7 +81,6 @@ header>h1 {
     border: 3px solid rgb(253, 180, 70)
 }
 
-/* Styling for result area */
 .result-display {
     padding: 1rem;
     line-height: 3rem;
@@ -97,7 +95,6 @@ header>h1 {
     font-size: 30px;
 }
 
-/* Score area */
 .score {
     line-height: 2.5rem;
     padding-bottom: 1rem;    
@@ -107,8 +104,7 @@ header>h1 {
     font-size: 25px;
 }
 
-/* Rules area */
-.rules>h2 {
+.rules > h2 {
     font-family: 'Luckiest Guy', sans-serif;
 }
 
