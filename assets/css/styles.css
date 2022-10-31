@@ -25,7 +25,7 @@ header {
 }
 
 header>h1 {
-    font-size: 200%;
+    font-size: 150%;
     color: #eb69fc; 
 }
 
@@ -45,11 +45,11 @@ header>h1 {
 
 .btn {
     margin: 1rem;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     transition: all 0.3s ease;
     border-radius: 50%;
-    font-size: 38px;
+    font-size: 30px;
     outline: none;
     border: none;
 }
@@ -81,7 +81,7 @@ header>h1 {
 }
 
 .restartBtn {
-    font-size: 100%;
+    font-size: 85%;
     font-family: Lato,sans-serif;
     color: #fa77fa;
     margin: 1rem;
@@ -101,7 +101,7 @@ header>h1 {
 
 .result-display {
     padding: 1rem;
-    line-height: 3rem;
+    line-height: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,11 +110,11 @@ header>h1 {
 }
 
 #result-text {
-    font-size: 30px;
+    font-size: 135%;
 }
 
 .score {
-    line-height: 2.5rem;
+    line-height: 2rem;
     padding-bottom: 1rem;    
 }
 
@@ -122,7 +122,7 @@ header>h1 {
     font-size: 25px;
 }
 
-.rules > h2 {
+.rules > h3 {
     font-family: 'Luckiest Guy', sans-serif;
 }
 
