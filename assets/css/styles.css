@@ -143,14 +143,14 @@ footer>a {
 }
 
 /* 
-Media query for screens with min width of 600px.
+Media query for screens with min width of 748px.
 Setting up larger buttons for bigger screen sizes and
 changing the order of result display children.
 */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 748px) {
     .btn {
-        width: 83px;
-        height: 83px;
+        width: 100px;
+        height: 100px;
         font-size: 50px;
     }
 
