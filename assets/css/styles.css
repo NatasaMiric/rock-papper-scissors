@@ -77,23 +77,26 @@ header>h1 {
 .btn:hover {
     cursor: pointer;
     transform: scale(1.2);
-    border: 3px solid rgb(253, 180, 70)
+    border: 3px solid rgb(253, 180, 70);
 }
 
 .restartBtn {
-    font-size: 15px;
+    font-size: 100%;
+    font-family: Lato,sans-serif;
+    color: #fa77fa;
     margin: 1rem;
-    background-color: white; 
-    padding: 1rem;    
+    background-color: #464747;
+    padding: 0.8rem;    
     border-radius: 5%;  
     transition: all 0.3s ease;
-    border: none;
+    border: 3px solid #fff243;
 }
 
-.restartBtn:hover{
-    background-color: #fa77fa;
+.restartBtn:hover {    
     cursor: pointer;  
     transform: scale(1.2);  
+    border: 3px solid #fa77fa;
+    color: #fff243;
 }
 
 .result-display {
