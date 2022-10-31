@@ -2,7 +2,7 @@
 
 The Rock Paper Scissors Lizard Spock game is an extended version of an old, classic Rock Paper Scissors game. Namely, it appeared first time on a TV Show named "The Big Bang Theory". This new version of the game has provided the players with much more choices, which means that it added some complexity, fun and reduced the chances od a tie match. 
 
-In this version, the user will play against the computer which means that he will always be able to have an opponent available to play with. The user will be presented with five options and choose one of them in each round - Rock, Paper, Scissors, Lizard, Spock. When user clicks on one option, the opponent (computer) will throw out a random selection. Rock Paper Scissors Lizard Game game will bring the fun to the users, and perhaps help to settle a dispute instead of going with the old way of flipping a coin.
+In this version, the user will play against the computer which means that he will always be able to have an opponent available to play with. The user will be presented with five options and choose one of them in each round - Rock, Paper, Scissors, Lizard, Spock. When user clicks on one option, the opponent (computer) will throw out a random selection. Rock Paper Scissors Lizard Spock Game game will be targeted towards people of all ages that want to have fun and perhaps help to settle a dispute instead of going with the old way of flipping a coin.
 
 ![](docs/amiresponsive.png)
 

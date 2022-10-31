@@ -100,7 +100,7 @@ header>h1 {
 /* Score area */
 .score {
     line-height: 2.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem;    
 }
 
 .score>span {
