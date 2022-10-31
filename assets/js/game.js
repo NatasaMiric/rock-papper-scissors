@@ -2,6 +2,7 @@ let userChoice = "";
 let compChoice = "";
 let pScore = 0;
 let cScore = 0;
+let result = null;
 
 //Restarts the game
 function restartGame() {
@@ -41,8 +42,7 @@ function isUserWinner(userChoice, compChoice) {
         (userChoice === "paper" && compChoice === "spock");
 }
 // Compares user and computer choice and increments the score depending who wins
-function checkWinner(userChoice, compChoice) {
-    let result = null;
+function checkWinner(userChoice, compChoice) {    
 
     if (userChoice === compChoice) {
         result = "It's a Tie!";
@@ -73,6 +73,6 @@ function initializeGame() {
     btnChoices.forEach(button => button.addEventListener('click', selectUserInput));
 
     document.getElementById("restart").addEventListener('click', restartGame);  
-};
+}
 
 window.addEventListener('DOMContentLoaded', initializeGame);

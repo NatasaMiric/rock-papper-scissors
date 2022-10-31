@@ -32,8 +32,7 @@ header>h1 {
 /* Add flex on play area to achieve responsive layout structure */
 .play-area {
     display: flex;
-    flex-direction: column;
-    display: flex;
+    flex-direction: column;    
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -46,8 +45,8 @@ header>h1 {
 
 .btn {
     margin: 1rem;
-    width: 57px;
-    height: 57px;
+    width: 75px;
+    height: 75px;
     transition: all 0.3s ease;
     border-radius: 50%;
     font-size: 38px;
@@ -150,8 +149,8 @@ changing the order of result display children.
 */
 @media screen and (min-width: 600px) {
     .btn {
-        width: 100px;
-        height: 100px;
+        width: 83px;
+        height: 83px;
         font-size: 50px;
     }
 
