@@ -16,23 +16,23 @@ body {
     text-align: center;
     min-height: 95vh;
     max-width: 1000px;
-    margin: 0 auto; 
-    text-shadow: 2px 2px black;   
+    margin: 0 auto;
+    text-shadow: 2px 2px black;
 }
 
 header {
-    margin: 2rem;
+    margin: 1.5rem;
 }
 
 header>h1 {
-    font-size: 150%;
-    color: #eb69fc; 
+    font-size: 138%;
+    color: #eb69fc;
 }
 
 /* Add flex on play area to achieve responsive layout structure */
 .play-area {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -40,13 +40,13 @@ header>h1 {
 
 /* Each button has a different color */
 .choices {
-    margin-top: 1rem;
+    margin: 1rem 1rem;
 }
 
 .btn {
-    margin: 1rem;
-    width: 50px;
-    height: 50px;
+    margin: 0.5rem;
+    width: 63px;
+    height: 63px;
     transition: all 0.3s ease;
     border-radius: 50%;
     font-size: 30px;
@@ -67,7 +67,7 @@ header>h1 {
 }
 
 .btn--green {
-    background-color: #5dee95;    
+    background-color: #5dee95;
 }
 
 .btn--purple {
@@ -82,19 +82,19 @@ header>h1 {
 
 .restartBtn {
     font-size: 85%;
-    font-family: Lato,sans-serif;
+    font-family: Lato, sans-serif;
     color: #fa77fa;
     margin: 1rem;
     background-color: #464747;
-    padding: 0.8rem;    
-    border-radius: 5%;  
+    padding: 0.5rem;
+    border-radius: 5%;
     transition: all 0.3s ease;
     border: 3px solid #fff243;
 }
 
-.restartBtn:hover {    
-    cursor: pointer;  
-    transform: scale(1.2);  
+.restartBtn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
     border: 3px solid #fa77fa;
     color: #fff243;
 }
@@ -115,21 +115,22 @@ header>h1 {
 
 .score {
     line-height: 2rem;
-    padding-bottom: 1rem;    
+    padding-bottom: 1rem;
 }
 
 .score>span {
     font-size: 25px;
 }
 
-.rules > h3 {
+.rules>h3 {
     font-family: 'Luckiest Guy', sans-serif;
+    padding: 0.5rem;
 }
 
 .rules {
     font-family: 'Lato', sans-serif;
     margin: 0 1rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
 /* Footer positioned at the bottom of the page*/
@@ -145,15 +146,53 @@ footer>a {
     margin: 1rem;
 }
 
+/*
+Media query fo screens with min-width 364px.
+Arrange layout of buttons.  
+*/
+@media screen and (min-width: 364px) {
+    .choices {
+        padding: 1rem;
+    }
+
+    .btn {
+        width: 68px;
+        height: 68px;
+    }
+
+    .result-display {
+        padding: 0;
+    }
+}
+
 /* 
-Media query for screens with min width of 748px.
+Media query for screens with min-width 600px.
+Adds width and height to buttons for better layout.
+*/
+@media screen and (min-width: 600px) {
+    .btn {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* 
+Media query for screens with min-width 700px.
 Setting up larger buttons for bigger screen sizes and
 changing the order of result display children.
 */
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 700px) {
+    header>h1 {
+        font-size: 200%;
+    }
+
+    h3 {
+        font-size: 150%;
+    }
+
     .btn {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
         font-size: 50px;
     }
 
