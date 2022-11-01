@@ -1,11 +1,26 @@
+
 let userChoice = "";
-const CHOICES = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 let compChoice = "";
+/**
+ * @enum {Array,<string>} List of possible values to be used
+ */
+const CHOICES = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+/**
+ * @type {number} playerScore The player score
+ */
 let playerScore = 0;
+/**
+ * @type {number} computerScore The computer score
+ */
 let computerScore = 0;
+/**
+ *  @type {string} result Displays the outcome of the match
+ */
 let result = null;
 
-//Restarts the game
+/**
+ * Restarts the game
+ */
 function restartGame() {
     playerScore = 0;
     computerScore = 0;
@@ -19,7 +34,12 @@ function restartGame() {
     document.getElementById("result-text").innerHTML = null;    
 }
 
-// Generetes random number and displaying random computer choice
+/**
+ * generateComputerInput function generates random number.
+ * Each number represents one of the elements stored in variable choices.
+ * Returns random computer choice.
+ * @returns {string}
+ */
 function generateComputerInput() {
     let randomNum = Math.floor(Math.random() * 5);   
     compChoice = CHOICES[randomNum];
@@ -27,7 +47,14 @@ function generateComputerInput() {
     compInput.innerHTML = compChoice;
     return compChoice;
 }
-
+/**
+ * isUserWinner function will compare user and computer input.
+ * Returns all the cases when the user is a winner. 
+ * 
+ * @param {string} userChoice The value of user input
+ * @param {string} compChoice The value of computer's input
+ * @returns {string}
+ */
 function isUserWinner(userChoice, compChoice) {
     return (userChoice === "rock" && compChoice === "scissors") ||
         (userChoice === "paper" && compChoice === "rock") ||
@@ -41,7 +68,12 @@ function isUserWinner(userChoice, compChoice) {
         (userChoice === "spock" && compChoice === "rock") ||
         (userChoice === "paper" && compChoice === "spock");
 }
-// Compares user and computer choice and increments the score depending who wins
+/**
+ * checkWinner function compares user and computer choice and
+ *  increments the score depending who wins.
+ * @param {string} userChoice The value of user input
+ * @param {sring} compChoice The value of computer's input
+ */ 
 function checkWinner(userChoice, compChoice) {    
 
     if (userChoice === compChoice) {
@@ -59,7 +91,11 @@ function checkWinner(userChoice, compChoice) {
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("comp-score").innerHTML = computerScore;
 }
-// Callback function that executes after user's click on button
+/**
+ * selectUserInput function is callback function that executes
+ * after user clicks on button.
+ * @param {*} event 
+ */
 function selectUserInput(event) {
     userChoice = event.target.id;
     let userInput = document.getElementById("player-choice");
@@ -67,7 +103,10 @@ function selectUserInput(event) {
     compChoice = generateComputerInput();
     checkWinner(userChoice, compChoice);
 }
-// Add event listeners to buttons
+/**
+ * Adds event listeners to all buttons that exist in game
+ * 
+ */
 function initializeGame() {
     let btnChoices = document.querySelectorAll(".btn");
     btnChoices.forEach(button => button.addEventListener('click', selectUserInput));    
