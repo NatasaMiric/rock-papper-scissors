@@ -48,11 +48,12 @@ function generateComputerInput() {
     compInput.innerHTML = compChoice;
     return compChoice;
 }
+
 /**
- * isUserWinner function will get cases when the user is a winner
+ * isUserWinner function will compare user and computer choice
+ * Returns cases when user winns
  * @param {string} userChoice The value of user input
- * @param {string} compChoice The value of computer input 
- * @return {isUserWinner} 
+ * @param {string} compChoice The value of computer input
  */
 function isUserWinner(userChoice, compChoice) {
     return (userChoice === "rock" && compChoice === "scissors") ||
@@ -67,6 +68,7 @@ function isUserWinner(userChoice, compChoice) {
         (userChoice === "spock" && compChoice === "rock") ||
         (userChoice === "paper" && compChoice === "spock");
 }
+
 /**
  * checkWinner function checks user and computer choice and
  * increments the score depending who wins.
@@ -90,6 +92,7 @@ function checkWinner(userChoice, compChoice) {
     document.getElementById("player-score").innerHTML = playerScore;
     document.getElementById("comp-score").innerHTML = computerScore;
 }
+
 /**
  * selectUserInput function is callback function that executes
  * after user input his choice of button.  
@@ -102,6 +105,7 @@ function selectUserInput(event) {
     compChoice = generateComputerInput();
     checkWinner(userChoice, compChoice);
 }
+
 /** This function adds event listeners to all buttons that exist in the game */
 function initializeGame() {
     let btnChoices = document.querySelectorAll(".btn");
