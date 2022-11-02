@@ -1,8 +1,8 @@
 #ROCK PAPER SCISSORS LIZARD SPOCK GAME
 
-The Rock Paper Scissors Lizard Spock game is an extended version of an old, classic Rock Paper Scissors game. Namely, it appeared first time on a TV Show named "The Big Bang Theory". This new version of the game has provided the players with much more choices, which means that it added some complexity, fun and reduced the chances od a tie match. 
+The Rock Paper Scissors Lizard Spock game is an extended version of an old, classic Rock Paper Scissors game. Namely, it appeared first time on a TV Show named "The Big Bang Theory". This new version of the game has provided the players with much more choices, which means that it added some complexity, fun and reduced the chances of a tie match. 
 
-In this version, the user will play against the computer which means that he will always be able to have an opponent available to play with. The user will be presented with five options and choose one of them in each round - Rock, Paper, Scissors, Lizard, Spock. When user clicks on one option, the opponent (computer) will throw out a random selection. Rock Paper Scissors Lizard Spock Game game will be targeted towards people of all ages that want to have fun and perhaps help to settle a dispute instead of going with the old way of flipping a coin.
+In this version, the user will play against the computer which means that he will always have an opponent available to play with. The user will be presented with five options and choose one of them in each round - Rock, Paper, Scissors, Lizard, Spock. When a user clicks on one option, the opponent (computer) will throw out a random selection. Rock Paper Scissors Lizard Spock Game game will be targeted towards people of all ages that want to have fun and perhaps help to settle a dispute instead of going with the old way of flipping a coin.
 
 ![](docs/amiresponsive.png)
 
@@ -52,7 +52,7 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
   ![](docs/colorpalette.png)
 
-  The chosen colors for the buttons are vibrant and bright to add a positive character and playfulness to the website. The dark grey background color provides good contrast. 
+  The chosen colors for the buttons are vibrant to add a positive character and playfulness to the website. The dark grey background color provides good contrast. 
 
 ### Typography
 
@@ -75,22 +75,22 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
 **Header**
 
-  * Featured on the top of the page and consisting the name of the Rock Paper Scissors Lizard Spock Game.
-  * Fun font and large size of the header clearly tells the user what game they are playing.
+  * Featured on the top of the page and holds the name of the Rock Paper Scissors Lizard Spock Game.
+  * Fun font and large size of the header clearly tell the user what game they are playing.
 
   ![](docs/wireframes/header.png)
 
 **The Game Options**
 
-  * The Game Options includes an instruction for the user to make a move and an option of five clickable buttons presented in a form of emojis for rock, paper, scissors, lizard and spock.
-  * This section provides and interactive buttons where the user can make a selection and play the game. 
+  * The Game Options include instruction for the user to make a move, and an option of five clickable buttons presented in a form of emojis for rock, paper, scissors, lizard and spock.
+  * This section provides interactive buttons where the user can make a selection and play the game. 
 
   ![](docs/wireframes/playbuttons.png)
 
 
 **The Game result**
 
-  * The Game result is positioned underneath the option buttons and shows the user's and computer's choice with the announcement if a user wins or loses, or is it a tie.
+  * The Game result is positioned underneath the option buttons and shows the user's and computer's choice with the announcement whether user wins or loses current round of the game.
   * When the user makes a selection, the Java Script code randomly generates the computer's choice and the announcement of the result is presented to the user.  
   * The results are valuable to the user to know what computer has selected and if he won or lost the round.  
 
@@ -99,27 +99,27 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 **Score**
 
   * The score is showing user's and computer's points and updating in each round depending on who is the winner. 
-  * It helps the user to keep updated who leads the game and who will be the winner.   
+  * It helps the user to keep updated on who leads the game and who will be the winner.   
 
   ![](docs/wireframes/score.png)
 
 **Restart Game**
 
-  * The restart button allows user to click on it and start a new game from beginning.
-  * This feature is valuable to user because it gives clear instruction to user where he needs to click in order to restart the game instead of clicking on reload page button. 
+  * The restart button allows the user to click on it and start a new game from the beginning.
+  * This feature is valuable to the user because it gives clear instructions to a user where he needs to click to restart the game instead of clicking on reload page button. 
 
   ![](docs/wireframes/restart.png)
 
 **Rules**
 
-  * Beneath the score are displayed rules of the game Rock Paper Scissors Lizard Spock.
+  * Beneath the score are displayed  the rules of the game Rock Paper Scissors Lizard Spock.
   * This section is valuable to the user to understand how the game is played.  
 
   ![](docs/wireframes/rules.png)
 
 **Footer**
 
-  * Footer is located at the bottom of the page and contains the GitHub and Linkedin page of the project creator. 
+  * Footer is located at the bottom of the page and contains the GitHub and Linkedin pages of the project creator. 
   * It is valuable to the creator to present herself and her work and make new connections.  
 
 ![](docs/wireframes/footer.png)
@@ -156,17 +156,18 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
 ## Testing
 
-  Testing was conducted throughout the website development with the help of Dev Tools. External links are tested on all browsers and they are opening in a new tab and lead to intended destination. 
+  Testing was conducted throughout the website development with the help of Dev Tools. External links are tested on all browsers and they are opening in a new tab and lead to the intended destination. 
 
-  I performed testing of buttons to make sure that everytime I click: 
-
-  * Every button is in function and displaying correct value.
-  * It is possible to choose same button several times.
+  I performed testing of buttons to make sure that every time I click: 
+ 
+  * Every button is in function and displaying the correct value.
+  * It is possible to choose the same button several times.
   * Computer always displays some random value and it is changing it in each round.
   * Score gets updated after each round. 
   * Result message is displayed after every move. 
+  * Restart button always returs user to the beginning of the game. 
 
-  I confirmed that this project is responsive, looks good and functions on standard screen sizes using the devtools device toolbar.
+  I confirmed that this project is responsive, looks good and functions on standard screen sizes using the dev tools device toolbar.
 
 * The website has been checked on multiple browsers and mobile devices:
 
@@ -194,7 +195,7 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
 ### Lighthouse
 
-* I run the lighthouse test for desktop and mobile to confirm that the page has good accessibility and to check other important parameters.
+* I run the lighthouse test for desktop and mobile to confirm that the page has good accessibility.
 
   ![](docs/testing/desktoplighthouse.png)
   ![](docs/testing/mobilelighthouse.png)
@@ -204,7 +205,7 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 **As a visiting user, I would like to be able to choose between rock, paper, scissors, lizard and spock.**
 
   * When landing on the page, it is clearly displayed to the user the instruction to make a move and beneath it the five options: rock, paper, scissors, lizard and spock. 
-  * When user hovers over the buttons they magnify and the orange border is present.
+  * When the user hovers over the buttons they magnify and the orange border is present.
   * User should click on one of the five options. 
 
   ![](docs/wireframes/playbuttons.png) 
@@ -212,18 +213,18 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
 **As a visiting user, I would like to be able to see my choice and the computer's choice.**
 
-  * After making a choice/clicking on one of the options, user is able to see his and computer's choice in the result area beneath the play buttons.  
+  * After making a choice/clicking on one of the options, the user is able to see his and computer's choice in the result area beneath the play buttons.  
 
 **As a visiting user, I would like to be able to see the outcome of our moves.**
 
-  * Beneath the play buttons is displayed the message after every move. 
+  * The message is displayed beneath the play buttons after each round. 
   * After clicking on one of the five options, the user gets the message did he won or lost, or is it a tie. 
 
   ![](docs/wireframes/result.png)
 
 **As a visiting user, I would like to be able to follow the score of the game.**
 
-  * After every move/click on button, user is able to see who gets the score and be updated of who is winning the game.  
+  * After every move/click on button, the user is able to see who gets the score and be updated of who is winning the game.  
 
   ![](docs/wireframes/score.png)
 
@@ -262,7 +263,7 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 ## Credits
 ### Code Used
 
-* Several tutorials on developing a Rock Paper Scissors game were viewed but no code was used directly from these tutorials and were used solely for inspiration on how to implement the game. These tutorials are: 
+* Several tutorials on developing a Rock Paper Scissors game were viewed but no code was used directly from these tutorials and was used solely for inspiration on how to implement the game. These tutorials are: 
 
   [Code with Ania Kubow](https://www.youtube.com/watch?v=RwFeg0cEZvQ&t=631s)
 
@@ -273,8 +274,11 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 ### Content
 
   * The rules of the game were taken from : https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock
+
 ### Media
 
   * The emojis were imported from the [Get Emoji](https://getemoji.com/).
 
 ###  Acknowledgments
+
+I would like to thank my tutor Rohit Sharma for his support and guidance throughout the creation of the project.

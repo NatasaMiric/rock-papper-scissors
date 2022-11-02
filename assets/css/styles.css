@@ -81,22 +81,20 @@ header>h1 {
 }
 
 .restartBtn {
-    font-size: 85%;
+    font-size: 100%;
     font-family: Lato, sans-serif;
-    color: #fa77fa;
+    color: #fff243;
     margin: 1rem;
     background-color: #464747;
     padding: 0.5rem;
     border-radius: 5%;
     transition: all 0.3s ease;
-    border: 3px solid #fff243;
+    border: 3px solid #fa77fa;
 }
 
 .restartBtn:hover {
     cursor: pointer;
-    transform: scale(1.2);
-    border: 3px solid #fa77fa;
-    color: #fff243;
+    transform: scale(1.2);   
 }
 
 .result-display {
@@ -115,7 +113,7 @@ header>h1 {
 
 .score {
     line-height: 2rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 .score>span {
