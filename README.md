@@ -13,7 +13,7 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 * [User Stories](#User-Stories)
 
 * [Design](#Design)
-  * [Colour Scheme](#Colour-Scheme)
+  * [Color Scheme](#Color-Scheme)
   * [Typography](#Typography)  
   * [Wireframes](#Wireframes)
 
@@ -48,7 +48,7 @@ Visit the deployed site: [Rock Paper Scissors Lizard Spock Game](https://natasam
 
 ## Design
 
-### Colour Scheme
+### Color Scheme
 
   ![](docs/colorpalette.png)
 
