@@ -1,26 +1,27 @@
-
 let userChoice = "";
 let compChoice = "";
 /**
- * @enum {Array,<string>} List of possible values to be used
+ *  Array of possible computer choices
+ *  @type {Array<string>} 
  */
 const CHOICES = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 /**
- * @type {number} playerScore The player score
+ * Player score
+ * @type {number} 
  */
 let playerScore = 0;
 /**
- * @type {number} computerScore The computer score
+ * Computer score
+ * @type {number} 
  */
 let computerScore = 0;
 /**
- *  @type {string} result Displays the outcome of the match
+ * Message to player if he wins or looses 
+ * @type {string} 
  */
 let result = null;
 
-/**
- * Restarts the game
- */
+/** This function restarts the game */
 function restartGame() {
     playerScore = 0;
     computerScore = 0;
@@ -28,32 +29,30 @@ function restartGame() {
     compChoice = null;
     result = null;
     document.getElementById("player-score").innerHTML = 0;
-    document.getElementById("comp-score").innerHTML = 0;    
+    document.getElementById("comp-score").innerHTML = 0;
     document.getElementById("player-choice").innerHTML = null;
-    document.getElementById("computer-choice").innerHTML = null;    
-    document.getElementById("result-text").innerHTML = null;    
+    document.getElementById("computer-choice").innerHTML = null;
+    document.getElementById("result-text").innerHTML = null;
 }
 
 /**
- * generateComputerInput function generates random number.
+ * This function generates random number.
  * Each number represents one of the elements stored in variable choices.
  * Returns random computer choice.
- * @returns {string}
+ * @returns {string} The computer's choice
  */
 function generateComputerInput() {
-    let randomNum = Math.floor(Math.random() * 5);   
+    let randomNum = Math.floor(Math.random() * 5);
     compChoice = CHOICES[randomNum];
     let compInput = document.getElementById("computer-choice");
     compInput.innerHTML = compChoice;
     return compChoice;
 }
 /**
- * isUserWinner function will compare user and computer input.
- * Returns all the cases when the user is a winner. 
- * 
+ * isUserWinner function will get cases when the user is a winner
  * @param {string} userChoice The value of user input
- * @param {string} compChoice The value of computer's input
- * @returns {string}
+ * @param {string} compChoice The value of computer input 
+ * @return {isUserWinner} 
  */
 function isUserWinner(userChoice, compChoice) {
     return (userChoice === "rock" && compChoice === "scissors") ||
@@ -69,12 +68,12 @@ function isUserWinner(userChoice, compChoice) {
         (userChoice === "paper" && compChoice === "spock");
 }
 /**
- * checkWinner function compares user and computer choice and
- *  increments the score depending who wins.
+ * checkWinner function checks user and computer choice and
+ * increments the score depending who wins.
  * @param {string} userChoice The value of user input
- * @param {sring} compChoice The value of computer's input
- */ 
-function checkWinner(userChoice, compChoice) {    
+ * @param {string} compChoice The value of computer's input
+ */
+function checkWinner(userChoice, compChoice) {
 
     if (userChoice === compChoice) {
         result = "It's a Tie!";
@@ -93,8 +92,8 @@ function checkWinner(userChoice, compChoice) {
 }
 /**
  * selectUserInput function is callback function that executes
- * after user clicks on button.
- * @param {*} event 
+ * after user input his choice of button.  
+ * @param {*} event
  */
 function selectUserInput(event) {
     userChoice = event.target.id;
@@ -103,14 +102,11 @@ function selectUserInput(event) {
     compChoice = generateComputerInput();
     checkWinner(userChoice, compChoice);
 }
-/**
- * Adds event listeners to all buttons that exist in game
- * 
- */
+/** This function adds event listeners to all buttons that exist in the game */
 function initializeGame() {
     let btnChoices = document.querySelectorAll(".btn");
-    btnChoices.forEach(button => button.addEventListener('click', selectUserInput));    
-    document.getElementById("restart").addEventListener('click', restartGame);     
+    btnChoices.forEach(button => button.addEventListener('click', selectUserInput));
+    document.getElementById("restart").addEventListener('click', restartGame);
 }
 
 window.addEventListener('DOMContentLoaded', initializeGame);
